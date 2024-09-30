@@ -15,8 +15,22 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
     }
     const config = JSON.parse(data);
 
-    const bot = new Telegraf(config.TOKEN);
-    const acc = config.STRING ? new Client({ apiId: config.ID, apiHash: config.HASH, session: config.STRING }) : null;
+const bot = new Telegraf(config.TOKEN);
+
+let acc = null;
+if (config.STRING) {
+    try {
+        acc = new Client({
+            apiId: config.ID,
+            apiHash: config.HASH,
+            session: config.STRING
+        });
+    } catch (error) {
+        console.error("Failed to initialize Client:", error);
+    }
+} else {
+    console.warn("String session not provided; Client will not be initialized.");
+}
 
     const USAGE = `
     〇 FOR PUBLIC CHATS
@@ -182,3 +196,4 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
     // Start bot
     bot.launch();
 });
+                          
