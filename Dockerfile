@@ -1,4 +1,4 @@
-# @SudoR2spr WOODcraft 
+# SudoR2spr
 FROM node:18
 
 # Set working directory
