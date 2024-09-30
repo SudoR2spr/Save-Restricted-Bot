@@ -19,37 +19,32 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
     const acc = config.STRING ? new Client({ apiId: config.ID, apiHash: config.HASH, session: config.STRING }) : null;
 
     const USAGE = `
-    〇 **FOR PUBLIC CHATS**
-    just send post/s link
+    〇 FOR PUBLIC CHATS
+    Just send the post link.
 
-    〇 **FOR PRIVATE CHATS**
-    ___first send invite link of the chat (unnecessary if the account of string session already member of the chat)
-    then send post/s link___
+    〇 FOR PRIVATE CHATS
+    First, send the invite link of the chat (unnecessary if the account with the string session is already a member of the chat). 
+    Then, send the post link.
 
-    〇 **FOR BOT CHATS**
-    send link with '/b/' , bot's username and message id, you might want to install some unofficial client to get the id like below
-   
-    ```
-    https://t.me/b/botusername/4321
-    ```
+    〇 FOR BOT CHATS
+    Send a link with '/b/', the bot's username, and the message ID. You might want to install an unofficial client to get the ID, as shown below:
+    
+    ◉▷ https://t.me/b/botusername/4321
 
-    〇 **MULTI POSTS**
-    send public/private posts link as explained above with format "from - to" to send multiple messages like below
-   
-    ```
-    https://t.me/xxxx/1001-1010
-    https://t.me/c/xxxx/101 - 120
-    ```
+    〇 MULTI POSTS
+    Send public/private post links as explained above in the format "from - to" to send multiple messages, as shown below:
 
-    ✍ note that space in between doesn't mattern between doesn't matter__
-    `;
+    ◉▷ https://t.me/xxxx/1001-1010
+    ◉▷ https://t.me/c/xxxx/101-120
 
+    〇 Note that spaces between the numbers don't matter.
+`;
     // Start command
     bot.start((ctx) => {
         ctx.replyWithPhoto(
-            'https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg', // Image link
+            'https://i.ibb.co/4SGvDMj/WD-save.jpg', // WD Image link
             {
-                caption: `👋 Hi ${ctx.message.from.first_name}, I am Save Restricted Bot, I can send you restricted content by its post link.\n\n${USAGE}`,
+                caption: `👋 𝐇𝐢 ${ctx.message.from.first_name}, I am Save Restricted Bot, I can send you restricted content by its post link.\n\n\ᢵ⎔⎔⎔⎔⎔🦋⎔⎔⎔⎔⎔ᢶ\n\n${USAGE}`,
                 reply_markup: {
                     inline_keyboard: [
                         [{ text: "🌐 Source Code", url: "https://github.com/SudoR2spr/Save-Restricted-Bot/" }],
@@ -67,15 +62,15 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
         if (message.includes("https://t.me/+") || message.includes("https://t.me/joinchat/")) {
             // Handle join chat links
             if (!acc) {
-                ctx.reply("**String Session is not Set**", { reply_to_message_id: ctx.message.message_id });
+                ctx.reply("𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐢𝐬 𝐍𝐨 𝐒𝐞𝐭", { reply_to_message_id: ctx.message.message_id });
                 return;
             }
 
             try {
                 await acc.joinChat(message);
-                ctx.reply("**Chat Joined**", { reply_to_message_id: ctx.message.message_id });
+                ctx.reply("𝐂𝐡𝐚𝐭 𝐉𝐨𝐢𝐧𝐞𝐝 ✅", { reply_to_message_id: ctx.message.message_id });
             } catch (error) {
-                ctx.reply(`**Error**: __${error.message}__`, { reply_to_message_id: ctx.message.message_id });
+                ctx.reply(`𝐄𝐫𝐫𝐨𝐫: __${error.message}__`, { reply_to_message_id: ctx.message.message_id });
             }
         } else if (message.includes("https://t.me/")) {
             // Handle public/private messages
@@ -89,7 +84,7 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
                     const chatid = parseInt("-100" + parts[4]);
 
                     if (!acc) {
-                        ctx.reply("**String Session is not Set**", { reply_to_message_id: ctx.message.message_id });
+                        ctx.reply("𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐢𝐬 𝐍𝐨 𝐒𝐞𝐭", { reply_to_message_id: ctx.message.message_id });
                         return;
                     }
                     await handlePrivate(ctx, chatid, msgID);
@@ -97,7 +92,7 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
                     const username = parts[4];
 
                     if (!acc) {
-                        ctx.reply("**String Session is not Set**", { reply_to_message_id: ctx.message.message_id });
+                        ctx.reply("𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐢𝐬 𝐍𝐨 𝐒𝐞𝐭", { reply_to_message_id: ctx.message.message_id });
                         return;
                     }
                     await handlePrivate(ctx, username, msgID);
@@ -108,7 +103,7 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
                         const msg = await bot.telegram.getMessage(username, msgID);
                         await ctx.replyWithMessage(msg.chat.id, msg.id);
                     } catch (error) {
-                        ctx.reply("**The username is not occupied by anyone**", { reply_to_message_id: ctx.message.message_id });
+                        ctx.reply("𝐓𝐡𝐞 𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞 𝐢𝐬 𝐍𝐨𝐭 𝐎𝐜𝐜𝐮𝐩𝐢𝐞𝐝 𝐛𝐲 𝐚𝐧𝐲𝐨𝐧𝐞", { reply_to_message_id: ctx.message.message_id });
                     }
                 }
 
@@ -124,9 +119,9 @@ fs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {
             return await pTimeout(acc.getMessage(chatId, msgId), 90000); // 90 seconds timeout
         } catch (error) {
             if (error instanceof pTimeout.TimeoutError) {
-                ctx.reply('**Request timed out. Please try again later.**', { reply_to_message_id: ctx.message.message_id });
+                ctx.reply('Request timed out. Please try again later.', { reply_to_message_id: ctx.message.message_id });
             } else {
-                ctx.reply(`**Error**: __${error.message}__`, { reply_to_message_id: ctx.message.message_id });
+                ctx.reply(`𝐄𝐫𝐫𝐨𝐫: __${error.message}__`, { reply_to_message_id: ctx.message.message_id });
             }
         }
     };
