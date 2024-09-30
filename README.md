@@ -25,11 +25,15 @@ Deploy Now Back4App render Koyeb Heroku
 - `HASH`: get [Telegram API & Hash]*(https://my.telegram.org/)
 - `STRING`: get program string session
 - `PORT`: `3000` OUR `5000`YOUR CHOICE
+- 
 <br>
+
 - Bot command @BotFather
+
 ```
 start - ⚡️ Bot alive cheking
 ```
+
 <br>
 
 
