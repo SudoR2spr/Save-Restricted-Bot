@@ -21,8 +21,8 @@ Deploy Now Back4App render Koyeb Heroku
 
 - `Your bot details add` : config.json replace your bot details
 - `TOKEN`: get [@BotFather](https://t.me/BotFather)
-- `ID`: get [Telegram API & Hash]*(https://my.telegram.org/)
-- `HASH`: get [Telegram API & Hash]*(https://my.telegram.org/)
+- `ID`: get [Telegram API & Hash](https://my.telegram.org)
+- `HASH`: get [Telegram API & Hash](https://my.telegram.org)
 - `STRING`: get [Pyrogram string session](https://colab.research.google.com/drive/1wjYvtwUo5zDsUvukyafAR9Of-2NYkKsu)
 - `PORT`: `3000` OUR `5000`YOUR CHOICE
 - 
