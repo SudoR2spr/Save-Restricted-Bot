@@ -1,4 +1,4 @@
-# Save-Restricted-Bot
+Save-Restricted-Bot [![License: MIT][License-Badge]](LICENSE)
 
 <!-- RAINBOW LINE TOP -->
 <img src="https://github.com/SudoR2spr/SudoR2spr/raw/main/assets/line-neon.gif" width="100%">
@@ -53,4 +53,6 @@ Credits: [𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭](https://t.me/Farooq_is_KING)
 
 - [![Contact Me On Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Farooq_is_king)
 
-Last Edited on: 30/09/2024
+[License-Badge]:        https://img.shields.io/badge/License-MIT-blue.svg  
+
+Last update on: 30/09/2024
