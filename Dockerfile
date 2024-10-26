@@ -1,20 +1,13 @@
-# SudoR2spr
-FROM node:18
+FROM python:3.9
 
-# Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+COPY requirements.txt /app/
 
-# Install dependencies
-RUN npm install
+RUN pip3 install -r requirements.txt
 
-# Copy the rest of the application code
-COPY . .
+COPY . /app
 
-# Expose port
 EXPOSE 3000
 
-# Start the application
-CMD ["node", "index.js"]
+CMD flask run -h 0.0.0.0 -p 3000 & python3 main.py
