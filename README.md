@@ -16,13 +16,21 @@ Save-Restricted-Bot [![License: MIT][License-Badge]](LICENSE)
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+SudoR2spr!;" />
 </h1>
 <br>
-Deploy Now Back4App render Koyeb Heroku
+<hr>
+<h5><img src="https://raw.githubusercontent.com/SudoR2spr/SudoR2spr/main/Premium-icon/edit.gif" align="center" width="50"> Note</h5>
+<li><code>Back4App render Koyeb Heroku Easy to Deploy and Bot Use simple.</code></li>
+<li>🤖 Any changes you make to your fork repo.<a href="https://github.com/SudoR2spr/Save-Restricted-Bot/fork">🔗 Click Here To Fork Repo</a></li>
 - Telegram bot Save-Restricted-Bot 
 
-- `Your bot details add` : config.json replace your bot details
-- `TOKEN`: get [@BotFather](https://t.me/BotFather)
-- `ID`: get [Telegram API & Hash](https://my.telegram.org)
-- `HASH`: get [Telegram API & Hash](https://my.telegram.org)
+<hr>
+<h5><img src="https://raw.githubusercontent.com/SudoR2spr/SudoR2spr/main/Premium-icon/pendrive-storage-put-in-out.gif" align="center" width="50"> Environment Variables</h5>
+
+ <ul>
+   <li>🔧 Your bot details add: <code>config.json</code> replace your bot details</li>
+</ul> 
+- `LOL_BOT_TOKEN`: Your Bot token from [@BotFather](https://t.me/BotFather)
+- `API_LOL_ID`: Your API ID from [My.telegram.org](https://my.telegram.org)
+- `API_LOL_HASH`: Your API Hash from [My.telegram.org](https://my.telegram.org)
 - `STRING`: get [Pyrogram string session](https://colab.research.google.com/drive/1wjYvtwUo5zDsUvukyafAR9Of-2NYkKsu)
 - `PORT`: `3000` OUR `5000`YOUR CHOICE
 - 
@@ -49,10 +57,11 @@ start - ⚡️ Bot alive cheking
 </p>
  
 -----
+Repo by: [bipinkrish](https://github.com/bipinkrish)
 Credits: [𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭](https://t.me/Farooq_is_KING)
 
 - [![Contact Me On Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Farooq_is_king)
 
 [License-Badge]:        https://img.shields.io/badge/License-MIT-blue.svg  
 
-Last update on: 30/09/2024
+Last update on: 26/10/2024
