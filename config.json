@@ -1,7 +1,7 @@
 {
-    "TOKEN": "7431530440:AAFkk6jCasr8nHZnRicFgF1yRFt_lvkgkM",
-    "ID": "04314943",
-    "HASH": "08c07ba57d9130d974c9b3639e0",
+    "LOL_BOT_TOKEN": "6865080558:AAG78HmHqTGHVoBkX1A4UWYnvUCJGfT",
+    "API_LOL_ID": "3324513",
+    "API_LOL_HASH": "8325ba83751dfadedcc961bf1275",
     "PORT": "3000",
-    "STRING": "add_pyrogram_string"
+    "STRING": null
 }
