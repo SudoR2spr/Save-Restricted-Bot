@@ -33,8 +33,7 @@ Save-Restricted-Bot [![License: MIT][License-Badge]](LICENSE)
 - `API_LOL_ID`: Your API ID from [My.telegram.org](https://my.telegram.org)
 - `API_LOL_HASH`: Your API Hash from [My.telegram.org](https://my.telegram.org)
 - `STRING`: get [Pyrogram string session](https://colab.research.google.com/drive/1wjYvtwUo5zDsUvukyafAR9Of-2NYkKsu)
-- `PORT`: `3000` OUR `5000`YOUR CHOICE
-- 
+- `PORT`: `3000` OUR `5000`YOUR CHOICE 
 <br>
 
 - Bot command @BotFather
