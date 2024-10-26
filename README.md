@@ -28,6 +28,7 @@ Save-Restricted-Bot [![License: MIT][License-Badge]](LICENSE)
  <ul>
    <li>🔧 Your bot details add: <code>config.json</code> replace your bot details</li>
 </ul> 
+
 - `LOL_BOT_TOKEN`: Your Bot token from [@BotFather](https://t.me/BotFather)
 - `API_LOL_ID`: Your API ID from [My.telegram.org](https://my.telegram.org)
 - `API_LOL_HASH`: Your API Hash from [My.telegram.org](https://my.telegram.org)
